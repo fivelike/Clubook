@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <!-- 页头 -->
+  <!-- 页头 -->
   <div class="page-header">
     <div class="row">
       <div class="col-md-2">
@@ -17,16 +17,22 @@
       </div>
 
 
-<div class="col-md-2 col-md-offset-3">
-<div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default" routerLink="login">登陆</button>
-  <button type="button" class="btn btn-default" routerLink="register">注册</button>
+      <div *ngIf="!currentUser?.userName" class="col-md-2 col-md-offset-3">
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" routerLink="login">登陆</button>
+          <button type="button" class="btn btn-default" routerLink="register">注册</button>
+        </div>
+      </div>
 
-</div>
+      <ul *ngIf="currentUser?.userName" class="col-md-2 col-md-offset-3 nav navbar-nav navbar-right">
+        <li routerLinkActive="active">
+          <a >欢迎您：{{currentUser?.userName}}</a>
+        </li>
 
-
-</div>
-
+        <li>
+          <a href="javascript:void(0);" (click)="doLogout()">退出</a>
+        </li>
+      </ul>
 
 
     </div>
@@ -48,16 +54,7 @@
     </div>
     <!-- 主体内容 -->
     <div class="col-md-10">
-      <div class="jumbotron">
-        <h1>Hello, world!</h1>
-        <router-outlet></router-outlet>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">
-            Learn more
-            </a>
-        </p>
-      </div>
+      <router-outlet></router-outlet>
     </div>
-
-
   </div>
 </div>
