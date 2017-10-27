@@ -7,7 +7,6 @@ import { HttpModule, JsonpModule, Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DiscoverComponent } from './discover/discover.component';
-import { JoinComponent } from './join/join.component';
 import { appRoutes } from './app.routes';
 
 import { UserLoginService } from './user/user-login/user-login.service';
@@ -16,16 +15,17 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { CorporationComponent } from './corporation/corporation.component';
 import { CircleComponent } from './circle/circle.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiscoverComponent,
-    JoinComponent,
     UserLoginComponent,
     UserRegisterComponent,
     CorporationComponent,
-    CircleComponent
+    CircleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
