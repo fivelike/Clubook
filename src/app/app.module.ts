@@ -16,6 +16,7 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
 import { CorporationComponent } from './corporation/corporation.component';
 import { CircleComponent } from './circle/circle.component';
 import { HomeComponent } from './home/home.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
     UserRegisterComponent,
     CorporationComponent,
     CircleComponent,
-    HomeComponent
+    HomeComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
