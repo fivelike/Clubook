@@ -14,6 +14,8 @@ import { UserLoginService } from './user/user-login/user-login.service';
 
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
+import { CorporationComponent } from './corporation/corporation.component';
+import { CircleComponent } from './circle/circle.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
     DiscoverComponent,
     JoinComponent,
     UserLoginComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
+    CorporationComponent,
+    CircleComponent
   ],
   imports: [
     BrowserModule,
