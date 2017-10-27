@@ -21,13 +21,11 @@ export class UserLoginComponent implements OnInit {
 
   }
 
-  onSubmit(form: any){
-    console.log(form);
-  }
+
 
   public doLogin():void{
     this.userLoginService.login(this.user);
-    this.router.navigateByUrl("discover");
+    this.router.navigateByUrl("home");
   }
 
 }

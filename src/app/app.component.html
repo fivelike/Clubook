@@ -43,23 +43,24 @@
     <!-- 侧栏导航 -->
     <div class="col-md-2">
       <ul class="nav nav-pills nav-stacked">
+        <li *ngIf="currentUser?.userName" role="presentation" routerLinkActive="active">
+          <a routerLink="home">首页</a>
+        </li>
         <li role="presentation" routerLinkActive="active">
           <a routerLink="discover">发现</a>
         </li>
         <li *ngIf="!currentUser?.userName" role="presentation" routerLinkActive="active">
           <a routerLink="register">加入Clubook</a>
         </li>
-
-      </ul>
-      <ul *ngIf="currentUser?.userName" class="nav nav-pills nav-stacked">
-        <li role="presentation" routerLinkActive="active">
+        <li *ngIf="currentUser?.userName" role="presentation" routerLinkActive="active">
           <a routerLink="corporation">社团</a>
         </li>
-        <li role="presentation" routerLinkActive="active">
+        <li *ngIf="currentUser?.userName" role="presentation" routerLinkActive="active">
           <a routerLink="circle">圈子</a>
         </li>
 
       </ul>
+
     </div>
     <!-- 主体内容 -->
     <div class="col-md-10">

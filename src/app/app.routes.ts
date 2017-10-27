@@ -2,11 +2,11 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { DiscoverComponent } from './discover/discover.component';
-import { JoinComponent } from './join/join.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { CircleComponent } from './circle/circle.component';
 import { CorporationComponent } from './corporation/corporation.component';
+import { HomeComponent } from './home/home.component';
 
 export const appRoutes = [
     {
@@ -17,10 +17,6 @@ export const appRoutes = [
     {
         path: "discover",
         component: DiscoverComponent
-    },
-    {
-        path: "join",
-        component: JoinComponent
     },
     {
         path: 'login',
@@ -37,6 +33,10 @@ export const appRoutes = [
     {
         path: 'corporation',
         component: CorporationComponent
+    },
+    {
+        path: 'home',
+        component: HomeComponent
     },
     // {
     //     path: '**',//fallback router must in the last
