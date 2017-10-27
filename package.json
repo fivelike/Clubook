@@ -26,6 +26,7 @@
     "ng-zorro-antd": "0.5.1",
     "font-awesome": "^4.7.0",
     "bootstrap": "3.3.7",
+    "semantic-ui": "2.2.4",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
