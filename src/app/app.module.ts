@@ -21,6 +21,8 @@ import { WritePassageComponent } from './home/write-passage/write-passage.compon
 import { PassageCardComponent } from './home/passage-card/passage-card.component';
 import { CircleCardComponent } from './discover/circle-card/circle-card.component';
 import { CircleListComponent } from './discover/circle-list/circle-list.component';
+import { CreatCircleComponent } from './circle/creat-circle/creat-circle.component';
+import { CreatCorporationComponent } from './corporation/creat-corporation/creat-corporation.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { CircleListComponent } from './discover/circle-list/circle-list.componen
     WritePassageComponent,
     PassageCardComponent,
     CircleCardComponent,
-    CircleListComponent
+    CircleListComponent,
+    CreatCircleComponent,
+    CreatCorporationComponent
   ],
   imports: [
     BrowserModule,
