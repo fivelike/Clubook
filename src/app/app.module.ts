@@ -17,6 +17,10 @@ import { CorporationComponent } from './corporation/corporation.component';
 import { CircleComponent } from './circle/circle.component';
 import { HomeComponent } from './home/home.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { WritePassageComponent } from './home/write-passage/write-passage.component';
+import { PassageCardComponent } from './home/passage-card/passage-card.component';
+import { CircleCardComponent } from './discover/circle-card/circle-card.component';
+import { CircleListComponent } from './discover/circle-list/circle-list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { NotificationsComponent } from './notifications/notifications.component'
     CorporationComponent,
     CircleComponent,
     HomeComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    WritePassageComponent,
+    PassageCardComponent,
+    CircleCardComponent,
+    CircleListComponent
   ],
   imports: [
     BrowserModule,
