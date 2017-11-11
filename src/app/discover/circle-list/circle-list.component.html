@@ -1,0 +1,26 @@
+
+<div class="ui two column centered grid">
+  <div class="two centered column">
+    <h3 class="ui header">社团</h3>
+
+  </div>
+  <div class="two centered column">
+    <h3 class="ui header">圈子</h3>
+  </div>
+
+</div>
+<div class="ui two column centered grid">
+  <div class="two centered column">
+    <nz-carousel [nzVertical]="true" [nzAutoPlay]="true" [nzEffect]="fade">
+      <circle-card nz-carousel-content *ngFor="let myCircle of circleList" [circle]="myCircle">
+      </circle-card>
+    </nz-carousel>
+  </div>
+  <div class="two centered column">
+    <nz-carousel [nzVertical]="true" [nzAutoPlay]="true" [nzEffect]="fade">
+      <circle-card nz-carousel-content *ngFor="let myCircle of circleList" [circle]="myCircle">
+      </circle-card>
+    </nz-carousel>
+  </div>
+
+</div>

@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { appRoutes } from './app.routes';
 
+import { MasonryModule } from 'angular2-masonry';
+
 import { UserLoginService } from './user/user-login/user-login.service';
 
 import { UserLoginComponent } from './user/user-login/user-login.component';
@@ -17,6 +19,13 @@ import { CorporationComponent } from './corporation/corporation.component';
 import { CircleComponent } from './circle/circle.component';
 import { HomeComponent } from './home/home.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { WritePassageComponent } from './home/write-passage/write-passage.component';
+import { PassageCardComponent } from './home/passage-card/passage-card.component';
+import { CircleCardComponent } from './discover/circle-card/circle-card.component';
+import { CircleListComponent } from './discover/circle-list/circle-list.component';
+import { CreatCircleComponent } from './circle/creat-circle/creat-circle.component';
+import { CreatCorporationComponent } from './corporation/creat-corporation/creat-corporation.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +36,13 @@ import { NotificationsComponent } from './notifications/notifications.component'
     CorporationComponent,
     CircleComponent,
     HomeComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    WritePassageComponent,
+    PassageCardComponent,
+    CircleCardComponent,
+    CircleListComponent,
+    CreatCircleComponent,
+    CreatCorporationComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +50,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
     FormsModule,
     HttpModule,
     JsonpModule,
+    MasonryModule,
     NgZorroAntdModule.forRoot(),
     RouterModule.forRoot(appRoutes),
 

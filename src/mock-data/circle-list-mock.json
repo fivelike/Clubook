@@ -1,0 +1,17 @@
+{
+    "total": 20,
+    "items": [
+        {
+            "circleId": 1,
+            "circleName": "失物招领",
+            "circleMembers": "2324",
+            "circleImage": ""
+        },
+        {
+            "circleId": 2,
+            "circleName": "拼车",
+            "circleMembers": "2324",
+            "circleImage": ""
+        }
+    ]
+}
