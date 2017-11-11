@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { appRoutes } from './app.routes';
 
+import { MasonryModule } from 'angular2-masonry';
+
 import { UserLoginService } from './user/user-login/user-login.service';
 
 import { UserLoginComponent } from './user/user-login/user-login.component';
@@ -23,6 +25,7 @@ import { CircleCardComponent } from './discover/circle-card/circle-card.componen
 import { CircleListComponent } from './discover/circle-list/circle-list.component';
 import { CreatCircleComponent } from './circle/creat-circle/creat-circle.component';
 import { CreatCorporationComponent } from './corporation/creat-corporation/creat-corporation.component';
+
 
 @NgModule({
   declarations: [
@@ -47,6 +50,7 @@ import { CreatCorporationComponent } from './corporation/creat-corporation/creat
     FormsModule,
     HttpModule,
     JsonpModule,
+    MasonryModule,
     NgZorroAntdModule.forRoot(),
     RouterModule.forRoot(appRoutes),
 

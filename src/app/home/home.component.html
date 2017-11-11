@@ -1,7 +1,9 @@
 
 <div class="container">
   <write-passage></write-passage>
-  <div class="ui cards"><passage-card></passage-card></div>
+  <masonry [useImagesLoaded]="true" [options]="myOptions">
+    <passage-card masonry-brick *ngFor="let brick of bricks"></passage-card>
+  </masonry>
 </div>
 
 
