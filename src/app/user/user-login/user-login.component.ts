@@ -11,6 +11,7 @@ import { User } from '../model/user-model';
 })
 export class UserLoginComponent implements OnInit {
   public user: User = new User();
+  public error: Error;
 
   constructor(
     public router: Router,
@@ -24,8 +25,9 @@ export class UserLoginComponent implements OnInit {
 
 
   public doLogin():void{
+    console.log(this.user);
     this.userLoginService.login(this.user);
-    this.router.navigateByUrl("home");
+
   }
 
 }
