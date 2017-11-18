@@ -4,6 +4,7 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule, Http } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DiscoverComponent } from './discover/discover.component';
@@ -12,6 +13,9 @@ import { appRoutes } from './app.routes';
 import { MasonryModule } from 'angular2-masonry';
 
 import { UserLoginService } from './user/user-login/user-login.service';
+import { UserRegisterService } from './user/user-register/user-register.service';
+
+import { EqualValidator } from './user/user-register/directives/equal-validator.directive';
 
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
@@ -30,6 +34,7 @@ import { CreatCorporationComponent } from './corporation/creat-corporation/creat
 @NgModule({
   declarations: [
     AppComponent,
+    EqualValidator,
     DiscoverComponent,
     UserLoginComponent,
     UserRegisterComponent,
@@ -47,6 +52,7 @@ import { CreatCorporationComponent } from './corporation/creat-corporation/creat
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     JsonpModule,
@@ -56,7 +62,8 @@ import { CreatCorporationComponent } from './corporation/creat-corporation/creat
 
   ],
   providers: [
-    UserLoginService
+    UserLoginService,
+    UserRegisterService
   ],
   bootstrap: [AppComponent]
 })

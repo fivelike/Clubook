@@ -8,7 +8,7 @@ import { Circle } from '../model/circle-model';
 export class CircleCardComponent implements OnInit {
   @Input() circle: Circle;
   constructor() {
-    console.log(this.circle);
+    // console.log(this.circle);
    }
 
   ngOnInit() {
